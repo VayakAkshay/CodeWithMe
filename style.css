@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&family=Roboto&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+body{
+	width: 100%;
+	background-color: #f4f5f9;
+}
+header{
+	height: 2px;
+	animation:loading 1s ease-in-out;
+	background-color: white;
+	position: fixed;
+}
+@keyframes loading{
+	0%{
+		width: 0;
+	}
+	50%{
+		width: 200px;
+	}
+	100%{
+		width: 100%;
+	}
+}
+main{
+	height: 100%;
+	width: 100%;
+	font-family: 'Readex Pro', sans-serif;
+	background-image: url("leptop.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-attachment: fixed;
+	background-size: 650px 350px;
+	/*border: 2px solid black;*/
+}
+main .head{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	z-index: 1;
+}
+main .head img{
+	overflow: hidden;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+main .head .menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+main .head .menu ul{
+	display: inline-flex;
+	list-style: none;
+}
+main .head .menu ul li{
+	padding: 15px 15px;
+	font-size: 25px;
+}
+main .head ul li a{
+	text-decoration: none;
+	color: white;
+}
+main .head ul li a:hover{
+	color: silver;
+}
+#removemenu{
+	display: none;
+}
+.menubtn{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	font-size: 60px;
+	cursor: pointer;
+}
+.menubtn i{
+	color: white;
+}
+.Menubar{
+	height: 0px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	transition-duration: 0.5s;
+	z-index: -1;
+}
+.Menubar ul{
+	font-size: 25px;
+	display: none;
+	height: 100%;
+	width: 50%;
+	align-items: center;
+
+}
+.Menubar ul li{
+	padding-top: 50px;
+	list-style: none;
+	text-align: center;
+	text-decoration: none;
+}
+.Menubar ul li a{
+	text-decoration: none;
+	color: white;
+}
+.Menubar ul li a:hover{
+	color: gray;
+}
+
+main .container{
+	margin-top: 100px;
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	z-index: -1;
+	align-items: center;
+}
+main .container h1{
+	font-size: 50px;
+}
+main .container h2{
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+}
+main .buttons{
+	display: flex;
+	height: 70px;
+	width: 50%;
+	color: black;
+	justify-content:center;
+	margin-top: 50px;
+	align-items: center;
+}
+main .buttons button{
+	height: 50px;
+	width: 170px;
+	font-size: 25px;
+	background-color: #1a73e8;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+main .buttons button a{
+	text-decoration: none;
+	color: white;
+}
+main .buttons button:hover{
+	background-color: #3b88ef;
+}
+main .social{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	margin-top: 10px;
+}
+main .social .fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+  transition-duration: .1s;
+}
+.fa:hover{
+	color: silver;
+}
+footer{
+	height: 100%;
+	background-color: white;
+}
+footer .about{
+	display: flex;
+	height: 100%;
+	font-size: 35px;
+	justify-content: center;
+	font-family: 'Readex Pro', sans-serif;
+	align-items: center;
+}
+footer .box{
+	display:  flex;
+	flex-wrap: wrap;
+	background-color: #f4f5f9;
+	justify-content: center;
+	width: 100%;
+}
+footer .box1{
+	margin-top: 20px;
+	height: 550px;
+	width: 750px;
+}
+footer .box2{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 550px;
+	width: 600px;
+}
+footer .box3{
+	margin-top: 20px;
+	height: 550px;
+	width: 600px;
+}
+footer .box4{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 550px;
+	width: 750px;
+}
+footer .box .box1 .image1 img{
+	height: 500px;
+	width: 750px;
+	box-shadow: 3px 3px 20px #00000029;
+	transition-duration: .5s;
+}
+footer .box .box1{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Readex Pro', sans-serif;
+}
+footer .box .box2{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Readex Pro', sans-serif;
+}
+footer .box .box2 .image2 img{
+	height: 500px;
+	width: 600px;
+	box-shadow: 3px 3px 20px #00000029;
+	transition-duration: .5s;
+}
+footer .box .box3 .image3 img{
+	height: 500px;
+	width: 600px;
+	box-shadow: 3px 3px 20px #00000029;
+	transition-duration: .5s;
+}
+footer .box .box3{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Readex Pro', sans-serif;
+}
+footer .box .box4 .image4 img{
+	height: 500px;
+	width: 750px;
+	box-shadow: 3px 3px 20px #00000029;
+	transition-duration: .5s;
+}
+footer .box .box4 .image4 img:hover{
+	margin-bottom: 10px;
+}
+footer .box .box3 .image3 img:hover{
+	margin-bottom: 10px;
+}
+footer .box .box2 .image2 img:hover{
+	margin-bottom: 10px;
+}
+footer .box .box1 .image1 img:hover{
+	margin-bottom: 10px;
+}
+footer .box .box4{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Readex Pro', sans-serif;
+}
+.main{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 35px;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+}
+.video{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	margin-top: 50px;
+	background-color: #f4f5f9;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.video .container1{
+	height: 500px;
+	width: 500px;
+	justify-content: center;
+	align-items: center;
+}
+.video .container2{
+	height: 500px;
+	width: 500px;
+	margin-left: 20px;
+}
+.video .container1 .img1 img{
+	height: 350px;
+	width: 500px;
+}
+.video .container1 button{
+	height: 50px;
+	width: 200px;
+	border: 2px solid black;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 20px;
+	background-color: #1a73e8;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+.video .container2 .img2 img{
+	height: 350px;
+	width: 500px;
+}
+.video .container2 button{
+	height: 50px;
+	width: 200px;
+	border: 2px solid black;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 20px;
+	background-color: #1a73e8;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+.video .container1 button:hover{
+	background-color: #3b88ef;
+	cursor: pointer;
+}
+.video .container2 button:hover{
+	background-color: #3b88ef;
+	cursor: pointer;
+}
+.contactus{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 50px;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.contact{
+	height: 100%;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: white;
+}
+.contact .contain{
+	height: 100%;
+	width: 80%;
+	margin-top: 20px;
+	/*border: 2px solid black;*/
+}
+.contact .contain .input{
+	border: none;
+}
+.contact .contain p{
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 20px;
+}
+.contact .contain h1{
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 50px;
+}
+.contact .contain .name{
+	height: 25px;
+	width: 40%;
+	/*border: 0px solid white;*/
+	border: none;
+	border-bottom: 2px solid black;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 20px;
+	background-color: transparent;
+	outline: none;
+	margin-top: 50px;
+}
+.contact .contain .alert{
+	height: 50px;
+	width: 100%;
+	border: 2px solid black;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	transition-duration: 1s ease-in-out;
+
+}
+.contact .contain .alert i{
+	color: white;
+	cursor: pointer;
+}
+.contact .contain .eid{
+	height: 25px;
+	width: 40%;
+	/*border: 0px solid white;*/
+	border: none;
+	border-bottom: 2px solid black;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 20px;
+	margin-left: 50px;
+	background-color: transparent;
+	outline: none;
+}
+.contact .contain .message{
+	height: 26px;
+	width: 60%;
+	border: none;
+	border-bottom: 2px solid black;
+	font-size: 20px;
+	font-family: 'Readex Pro', sans-serif;
+	background-color: transparent;
+	outline: none;
+	margin-top: 100px;
+}
+.contact .contain button{
+	height: 50px;
+	width: 150px;
+	margin-top: 60px;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 23px;
+	background-color: #1a73e8;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+}
+.contact .contain button:hover{
+	background-color: #468fef;
+}
+.message-box{
+	height: 300px;
+	width: 100%;
+	background-color: #f4f5f9;
+	color: black;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 23px;
+	display: none;
+	transition-duration: 2s;
+}
+.message-box h2{
+	margin-left: 100px;
+	margin-top: 100px;
+}
+.message-box h5{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+.welcome{
+	height: 700px;
+	width: 95%;
+	margin-left: 30px;
+	border: 2px solid black;
+	position: fixed;
+	margin-top: -100px;
+	z-index: 2;
+	background-color: #272522;
+	display: none;
+}
+.welcome .imgadd img{
+	height: 500px;
+	width: 100%;
+}
+.welcome .imgadd1 img{
+	display: none;
+	height: 500px;
+	width: 100%;
+}
+.welcome .contain{
+	height: 50px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+.welcome .contain input{
+	border: none;
+	border-bottom: 2px solid white;
+	height: 30px;
+	width: 300px;
+	background-color: transparent;
+	outline: none;
+	color: white;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 25px;
+	margin-left: 10px;
+}
+.welcome .submit{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.welcome .submit button{
+	height: 50px;
+	width: 150px;
+	font-size: 25px;
+	font-family: 'Readex Pro', sans-serif;
+	border: 2px solid white;
+	border-radius: 10px;
+	cursor: pointer;
+	/*display: none;*/
+}
+article{
+	height: 400px;
+	width: 100%;
+	box-shadow: 2px;
+	margin-top: 20px;
+	background-color: #e9e9f3;
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 40px;
+}
+article p{
+	display: block;
+	text-align: center;
+	margin-top: 100px;
+}
+article .icons{
+	display: block;
+	text-align: center;
+}
+article .icons .fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+  transition-duration: .1s;
+}
+.copyright{
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 18px;
+}
+.thanks{
+	font-family: 'Readex Pro', sans-serif;
+	font-size: 18px;
+}
+.thanks i{
+	color: white;
+}
+aside{
+	height: 100px;
+	width: 100%;
+	background-color: black;
+	border: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
